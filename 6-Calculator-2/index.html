@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form>
+    <div class="calc-1">
+        <input type="text" name="display">
+    </div>
+    <div class="calc-2">
+        <div class="inner">
+        
+            <div>
+                <input type="button" value="7" onclick="display.value += '7' ">
+                <input type="button" value="8" onclick="display.value += '8' ">
+                <input type="button" value="9" onclick="display.value += '9' ">
+                <input type="button" value="Del" class="delete" onclick="display.value = display.value.toString().slice(0,-1)">
+            </div>
+            <!---- end of 1 st row ----------->
+            <!---- 2nd Row ------->
+            <div>
+                <input type="button" value="4" onclick="display.value += '4' ">
+                <input type="button" value="5" onclick="display.value += '5' ">
+                <input type="button" value="6" onclick="display.value += '6' ">
+                <input type="button" value="+"onclick="display.value += '+' ">
+            </div>
+            <!---- end of 2nd row ----------->
+            <!---- 3rd Row ------->
+            <div>
+                <input type="button" value="1" onclick="display.value += '1' ">
+                <input type="button" value="2" onclick="display.value += '2' ">
+                <input type="button" value="3" onclick="display.value += '3' ">
+                <input type="button" value="-" onclick="display.value += '-' ">
+            </div>
+            <!---- end of 3rd row ----------->
+            <!---- 4th Row ------->
+            <div>
+                <input type="button" value="." onclick="display.value += '.' ">
+                <input type="button" value="0" onclick="display.value += '0' ">
+                <input type="button" value="/" onclick="display.value += '/' ">
+                <input type="button" value="x" onclick="display.value += '*' ">
+            </div>
+            <!---- end of 4th row ----------->
+            <!---- 5th Row ------->
+            <div>
+                <input type="button" value="RESET" class="reset" onclick="display.value = '' ">
+                <input type="button" value="=" class="equal" onclick = "display.value = eval(display.value)">
+            </div>
+            <!---- end of 5th row ----------->
+        </div>         
+    </div>
+</form>
+    
+</body>
+</html>
